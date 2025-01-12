@@ -40,7 +40,7 @@ export BOARD_NAME=adrv9361z7035
 <h2>Preparing board</h2>
 
 <p>It's required to move the "sdk" directory to <code>/openwifi/kernel_boot/boards/adrv9361z7035</code> from <code>/openwifi-hw-img/boards/adrv9361z7035</code></p>
-<pre><code>./prepare_adi_board_ip.sh</code></pre>
+<pre><code>./prepare_adi_board_ip.sh $XILINX_DIR $BOARD_NAME</code></pre>
 
 <h2>Generating IPcores</h2>
 
