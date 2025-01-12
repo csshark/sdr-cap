@@ -1,0 +1,52 @@
+<h1>Personal Discovery on <a href="https://github.com/open-sdr/openwifi-hw/?tab=readme-ov-file#build-fpga">Building FPGA</a> with OpenWifi</h1>
+
+<p>This is my own discovery of how to perform actions from the <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi</a> README instructions for building FPGA.</p>
+
+<p>Clone all required repositories:</p>
+<code>git clone https://github.com/open-sdr/openwifi-hw.git && git clone https://github.com/open-sdr/openwifi.git && git clone && git clone https://github.com/open-sdr/openwifi-hw-img.git</code>
+
+<p>After cloning <code>openwifi</code>, <code>openwifi-hw</code>, and <code>openwifi-hw-img</code>, it is necessary to visit <a href="https://github.com/analogdevicesinc/hdl/tree/f61d9707eb0a62533efd6facab59ab2444da94c9">analogdevicesinc/hdl</a>, find the <code>hdl_2021_r1</code> branch, and clone it into <code>/openwifi-hw/adi-hdl</code> directory using:</p>
+
+<pre><code>cd /openwifi-hw/adi-hdl/
+git clone -b hdl_2021_r1 https://github.com/analogdevicesinc/hdl.git
+# make sure to move all the subfolders and files into /adi-hdl directory  
+</pre></code>
+
+<h2>Environment Variables</h2>
+
+<pre><code>export XILINX_DIR=/tools/Xilinx
+export BOARD_NAME=adrv9361z7035
+</code></pre>
+
+<h2>Preparing Adi Libs</h2>
+
+<p>Now prepare Analog Devices HDL library:</p>
+<code>./prepare_adi_lib.sh $XILINX_DIR</code>
+
+<h2>Building IP Cores</h2>
+
+<p>Navigate to <code>/openwifi-hw</code> and build IP cores first with <code>./get_ip_openofdm_rx.sh</code>
+
+<pre><code>./get_ip_openofdm_rx.sh</code></pre>
+<h2>Preparing board</h2>
+
+<p>It's required to move the "sdk" directory to <code>/openwifi/kernel_boot/boards/adrv9361z7035</code> from <code>/openwifi-hw-img/boards/adrv9361z7035</code> - then there should be a message "OK".</p>
+<pre><code>./prepare_adi_board_ip.sh</code></pre>
+
+<h2>Generating IPcores</h2>
+
+<pre><code>cd openwifi-hw/boards/$BOARD_NAME/
+../create_ip_repo.sh $XILINX_DIR
+</code></pre>
+
+<h2>Vivado Setup</h2>
+
+<p>In Vivado 2021.1 in the Tcl console:</p>
+
+<pre><code>source ./openwifi.tcl
+# Now press "Generate Bitstream"
+</code></pre>
+
+<h3>Upgrading to a higher version:</h3>
+<h3>Manual upgrade method:</h3>
+<p>Build Project on Higher version of Vivado and match it with Petalinux version. I highly recommend to check meta-adi repository before targeting <code>master</code> branch.</p>
