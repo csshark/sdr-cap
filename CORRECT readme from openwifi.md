@@ -3,7 +3,7 @@
 <p>This is my own discovery of how to perform actions from the <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi</a> README instructions for building FPGA.</p>
 
 <p>Clone all required repositories:</p>
-<code>git clone https://github.com/open-sdr/openwifi-hw.git && git clone https://github.com/open-sdr/openwifi.git && git clone && git clone https://github.com/open-sdr/openwifi-hw-img.git</code>
+<pre><code>git clone https://github.com/open-sdr/openwifi-hw.git && git clone https://github.com/open-sdr/openwifi.git && git clone && git clone https://github.com/open-sdr/openwifi-hw-img.git</code></pre>
 
 <p>After cloning <code>openwifi</code>, <code>openwifi-hw</code>, and <code>openwifi-hw-img</code>, it is necessary to visit <a href="https://github.com/analogdevicesinc/hdl/tree/f61d9707eb0a62533efd6facab59ab2444da94c9">analogdevicesinc/hdl</a>, find the <code>hdl_2021_r1</code> branch, and clone it into <code>/openwifi-hw/adi-hdl</code> directory using:</p>
 
@@ -12,6 +12,15 @@ git clone -b hdl_2021_r1 https://github.com/analogdevicesinc/hdl.git
 # make sure to move all the subfolders and files into /adi-hdl directory  
 </pre></code>
 
+<h3>Example Structure:</h3>
+<pre><code>openwifi-hw</code>
+<code>|</code>
+<code>|</code>
+<code>L adi-hdl</code>
+<code>      L docs</code>
+<code>      L library</code>
+<code>      L projects</code></pre>
+  
 <h2>Environment Variables</h2>
 
 <pre><code>export XILINX_DIR=/tools/Xilinx
