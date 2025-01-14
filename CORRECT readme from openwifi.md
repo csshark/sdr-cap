@@ -1,6 +1,6 @@
 <h1>Personal Discovery on <a href="https://github.com/open-sdr/openwifi-hw/?tab=readme-ov-file#build-fpga">Building FPGA</a> with OpenWifi</h1>
 
-<p>This is my own discovery of how to perform actions from the <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi</a> README instructions for building FPGA.</p>
+<p>This is my own discovery of how to perform actions from the <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi-hw</a> README instructions for building FPGA.</p>
 
 <p>Clone all required repositories:</p>
 <pre><code>git clone https://github.com/open-sdr/openwifi-hw.git && git clone https://github.com/open-sdr/openwifi.git && git clone && git clone https://github.com/open-sdr/openwifi-hw-img.git</code></pre>
