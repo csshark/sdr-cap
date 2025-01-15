@@ -57,5 +57,5 @@ export BOARD_NAME=adrv9361z7035
 </code></pre>
 
 <h3>Upgrading to a higher version:</h3>
-<h3>Manual upgrade method:</h3>
-<p>Build Project on Higher version of Vivado and match it with Petalinux version. I highly recommend to check meta-adi repository before targeting <code>master</code> branch.</p>
+<h3>Auto-upgrade:</h3>
+<p>Build Project on Higher version of Vivado and do autoupgrading of IPcores. I highly recommend to check meta-adi repository before targeting <code>master</code> branch. You can additionally use VivadoComparer.sh to verify what changed in new relese and what should you rebuild manually.</p>
