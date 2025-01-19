@@ -9,7 +9,7 @@
     <li>FPGA-based network packet sniffer</li>
     <li>Custom driver for packet representation</li>
     <li>Similar functionality to Wireshark</li>
-    <li>User-Friendly README documentation for the OpenWifi project</li>
+    <li>User-Friendly <a href="CORRECT readme from openwifi.md">FPGA Build Instructions</a> for the OpenWifi project</li>
     <li>Automated building OpenWifi script</li>
     <li>Vivado IPcore comparsion script</li>
 </ul>
