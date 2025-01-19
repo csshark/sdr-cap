@@ -21,7 +21,7 @@ git clone https://github.com/open-sdr/openwifi-hw.git $OPENWIFI_HW_DIR
 git clone https://github.com/open-sdr/openwifi.git $OPENWIFI_DIR
 git clone https://github.com/open-sdr/openwifi-hw-img.git $OPENWIFI_HW_IMG_DIR
 
-cd $OPENWIFI_DIR/adi-hdl/
+cd $OPENWIFI_HW_DIR/adi-hdl/
 git clone -b hdl_2021_r1 https://github.com/analogdevicesinc/hdl.git
 mv hdl/* .
 
