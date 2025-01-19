@@ -33,6 +33,7 @@ cd sdr-cap</code></pre>
     </li>
     <li>Run the setup scripts:
         <pre><code>./prepare_hardware.sh</code></pre>
+        <pre><code>./inc_tools.sh</code></pre>
     </li>
     <li>Configure your ADRV9361Z7035 sniffer with net-tools.</li>
     <li>Start capturing network packets.</li>
