@@ -5,7 +5,7 @@
 <h3>Automated Method:</h3>
 <p>Run script (make sure it has permissions for launching) and enter values script asks for.</p>
 <p><code>./build_openwifi.sh</code></p>
-<p>Now you are done creating ip repo, continue steps from <a href="https://github.com/csshark/sdr-cap/edit/main/CORRECT%20readme%20from%20openwifi.md#vivado-setup">Vivado Setup</p>.
+<p>Now you are done creating ip repo, continue steps from <a href="https://github.com/csshark/sdr-cap/blob/main/CORRECT%20readme%20from%20openwifi.md#vivado-setup">Vivado Setup</p>.
 <h3>Manual Method:</h3>
 <p>Clone all required repositories:</p>
 <pre><code>git clone https://github.com/open-sdr/openwifi-hw.git && git clone https://github.com/open-sdr/openwifi.git && git clone && git clone https://github.com/open-sdr/openwifi-hw-img.git</code></pre>
