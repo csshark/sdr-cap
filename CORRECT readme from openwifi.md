@@ -27,7 +27,7 @@ git clone -b hdl_2021_r1 https://github.com/analogdevicesinc/hdl.git
 export BOARD_NAME=adrv9361z7035
 </code></pre>
 
-<b>NOTE:</b>If you want to migrate project to higher version afterwards, replace xilinx_dma.c with original xilinx_dma.c from <a href="https://github.com/Xilinx/linux-xlnx/tree/xlnx_rebase_v6.1_LTS/drivers/dma/xilinx">Xilinx</a> to openwifi/driver/xilinx_dma/. This method is provided in my <a href="https://github.com/csshark/sdr-cap/blob/main/build_openwifi.sh">automated building script, so run it by console.</a>.
+<b>NOTE:</b>If you want to migrate project to higher version afterwards, replace xilinx_dma.c with original xilinx_dma.c from <a href="https://github.com/Xilinx/linux-xlnx/tree/xlnx_rebase_v6.1_LTS/drivers/dma/xilinx">Xilinx</a> to openwifi/driver/xilinx_dma/. This method is provided in my <a href="https://github.com/csshark/sdr-cap/blob/main/build_openwifi.sh">automated building script</a>, so it's recommended to run it via .sh file.
 
 <h2>Preparing Adi Libs</h2>
 
