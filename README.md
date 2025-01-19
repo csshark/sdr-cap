@@ -24,17 +24,16 @@
     <li>microSD card <=16GB</li>
 </ul>
 
-<h3>Installation</h3>
+<h3>Build Sniffer-Chip Steps:</h3>
 <ol>
     <li>Clone the repository:
         <pre><code>git clone https://github.com/csshark/sdr-cap.git
-cd SDR-CAP</code></pre>
+cd sdr-cap</code></pre>
     </li>
-    <li>Follow the instructions in the provided README file to set up the OpenWifi framework.</li>
     <li>Run the setup scripts:
-        <pre><code>./setup_script.sh</code></pre>
+        <pre><code>./prepare_hardware.sh</code></pre>
     </li>
-    <li>Configure your FPGA with the provided files.</li>
+    <li>Configure your ADRV9361Z7035 sniffer with net-tools.</li>
     <li>Start capturing network packets.</li>
 </ol>
 
