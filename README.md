@@ -35,9 +35,11 @@ cd sdr-cap</code></pre>
         <pre><code>./prepare_hardware.sh</code></pre>
         <pre><code>./inc_tools.sh</code></pre>
     </li>
-    <li>Configure your ADRV9361Z7035 sniffer with net-tools.</li>
+    <li>Configure your ADRV9361-Z7035 sniffer with net-tools.</li>
     <li>Start capturing network packets.</li>
+    <li><code>./capture_start</code></li>
 </ol>
+<p>output should be written into "cap-current-date-and-time.pcap" file</p>
 
 <h2>Usage</h2>
 <p>Instructions on how to use the SDR-CAP tool will go here.</p>
