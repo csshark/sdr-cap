@@ -11,7 +11,7 @@
     <li>Similar functionality to Wireshark</li>
     <li>User-Friendly <a href="CORRECT readme from openwifi.md">FPGA Build Instructions</a> for the OpenWifi project</li>
     <li>Automated building OpenWifi script</li>
-    <li>Vivado IPcore comparsion script</li>
+    <li>Vivado IPcore comparison script</li>
     <li>Automated SDR-CAP build script</li>
 </ul>
 
