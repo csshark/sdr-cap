@@ -60,4 +60,4 @@ export BOARD_NAME=adrv9361z7035
 
 <h3>Upgrading to a higher version:</h3>
 
-<p>Build Project on Higher version of Vivado and do autoupgrading of IPcores. I highly recommend to check meta-adi repository before targeting <code>master</code> branch. You can additionally use VivadoComparer.sh to verify what changed in new relese and what should you rebuild manually.</p>
+<p>Build Project on Higher version of Vivado and do autoupgrading of IPcores. I highly recommend to check meta-adi repository before targeting <code>master</code> branch. You can additionally use <a href="https://github.com/csshark/sdr-cap/blob/main/VivadoComparer.sh">VivadoComparer.sh</a> to verify what changed in new relese and what should you rebuild manually.</p>
