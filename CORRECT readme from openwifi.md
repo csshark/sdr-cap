@@ -55,7 +55,7 @@ export BOARD_NAME=adrv9361z7035
 <p>In Vivado 2021.1 in the Tcl console:</p>
 
 <pre><code>source ./openwifi.tcl
-# Now press "Generate Bitstream"
+# wait for Vivado to finish building and generate bitstream.
 </code></pre>
 
 <h3>Upgrading to a higher version:</h3>
