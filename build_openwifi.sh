@@ -2,13 +2,13 @@
 # Simple automated bash script by csshark
 #Currently not tested, do not trust it 100%
 
-echo "Please enter the path to the XILINX_DIR:"
+echo "Please enter the path to the XILINX_DIR (example: /tools/Xilinx):"
 read XILINX_DIR
 
-echo "Please enter the BOARD_NAME:"
+echo "Please enter the BOARD_NAME (adrv9361z7035):"
 read BOARD_NAME
 
-echo "Please enter the path to the openwifi-hw directory:"
+echo "Please enter the path to the openwifi-hw directory (example: /home/frank/openwifi-hw):"
 read OPENWIFI_HW_DIR
 
 echo "Please enter the path to the openwifi directory:"
