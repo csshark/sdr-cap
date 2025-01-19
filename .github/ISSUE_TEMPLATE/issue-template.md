@@ -7,7 +7,7 @@ assignees: csshark
 
 ---
 
-1. Refer to the README section.
+1. Refer to the README section and describe issue.
 2. Problem category TAG: possible: integration, peta build, files, ask for upgrade --> [INTEG],[PETA BUILD],[FILES],[UPGR]
 3. Describe your Enviroment[OS,SDK version etc.)
 4. Action attempts made by the notifier to fix the problem
