@@ -68,6 +68,6 @@ export BOARD_NAME=adrv9361z7035
 <p>Build Project on Higher version of Vivado and do autoupgrading of IPcores. I highly recommend to check meta-adi repository before targeting <code>master</code> branch. You can additionally use <a href="https://github.com/csshark/sdr-cap/blob/main/VivadoComparer.sh">VivadoComparer.sh</a> to verify what changed in new relese and what should you rebuild manually.</p>
 
 <h1>Build Petalinux</h1>
-<p>First you have to source petalinux tools:</p>
-<pre><code>source /tools/PetaLinux/2023.2/settings.sh</code></pre>
-<a src=/Screemshots/></a>
+<p>First you have to get your device tree:</p>
+<pre><code>/path/to/your/Vitis/bin/xsct</code></pre>
+<a src=sdr-cap/Screenshots/gen dts.png></a>
