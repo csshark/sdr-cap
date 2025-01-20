@@ -72,3 +72,11 @@ export BOARD_NAME=adrv9361z7035
 <pre><code>/path/to/your/Vitis/bin/xsct</code></pre>
 
 ![Screenshot](Screenshots/gen_dts.png)
+
+<p>Use three commands for xsct 2023.2 Tool:</p>
+<pre><code>
+  sdtgen set_dt_param -board_dts /path/to/board_interface_preferences.xml #usually it's in Vivado/20xx.x/data/board_interface_preferences.xml
+  sdtgen set_dt_param -dir /path/to/output/dir #here output products are gonna be generated
+  sdtgen set_dt_param -xsa /path/to/xsa #ex: /home/user if xsa is stored in user directory
+  sdtgen gen_sdt
+</code></pre>
