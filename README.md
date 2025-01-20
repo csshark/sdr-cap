@@ -8,7 +8,7 @@
 <ul>
     <li>FPGA-based network packet sniffer</li>
     <li>Custom driver for packet representation</li>
-    <li>Output .pcap file to analysis.</li>
+    <li>Output .pcap file to analysis</li>
     <li>User-Friendly Build FPGA Guide for the OpenWifi project</li>
     <li>Automated building OpenWifi script</li>
     <li>Vivado IPcore comparison script</li>
