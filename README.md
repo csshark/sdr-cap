@@ -19,6 +19,7 @@
 
 <h3>Prerequisites</h3>
 <ul>
+    <li>Ubuntu 22.04LTS(tested, but other OS might work too)</li>
     <li>Xilinx Vivado 2023.2</li>
     <li>Xilinx SDK (if applicable)</li>
     <li>SDR ADRV9361-Z7035</li>
