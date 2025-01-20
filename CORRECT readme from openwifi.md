@@ -71,4 +71,4 @@ export BOARD_NAME=adrv9361z7035
 <p>First you have to get your device tree:</p>
 <pre><code>/path/to/your/Vitis/bin/xsct</code></pre>
 
-![Screenshot](Screenshots/gen dts.png)
+![Screenshot](Screenshots/gen_dts.png)
