@@ -80,3 +80,5 @@ export BOARD_NAME=adrv9361z7035
   sdtgen set_dt_param -xsa /path/to/xsa #ex: /home/user if xsa is stored in user directory
   sdtgen gen_sdt
 </code></pre>
+
+<p>Or alternatively we can build devicetree with <code>petalinux-build -c device-tree</code></p>
