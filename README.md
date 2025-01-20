@@ -2,14 +2,14 @@
 <p align="center">
   <img src="https://i.ibb.co/5v97yzm/sdr-cap.jpg" width=300px; heigth=300px;>
 </p>
-<p> &ensp; SDR-CAP by csshark is a network sniffer solution built on the OpenWifi project. It leverages an SDR FPGA-based architecture to capture and analyze network packets, providing functionality similar to Wireshark. Additionally, it includes a custom driver that enables the representation of network packets for effective analysis.</p>
+<p> &ensp; SDR-CAP by csshark is a network sniffer solution built on the OpenWifi project. It leverages an SDR FPGA-based architecture to capture and analyze network packets, providing functionality similar to Wireshark. Additionally, it includes a custom driver that enables the representation of network packets for effective analysis. You can also find detailed instructions for building the openwifi project on which SDR-CAP is based in the project directory.</p>
 
 <h2>Output products</h2>
 <ul>
     <li>FPGA-based network packet sniffer</li>
     <li>Custom driver for packet representation</li>
-    <li>Similar functionality to Wireshark</li>
-    <li>User-Friendly <a href="CORRECT readme from openwifi.md">FPGA Build Instructions</a> for the OpenWifi project</li>
+    <li>Output .pcap file to analysis.</li>
+    <li>User-Friendly Build FPGA Guide for the OpenWifi project</li>
     <li>Automated building OpenWifi script</li>
     <li>Vivado IPcore comparison script</li>
     <li>Automated SDR-CAP build script</li>
