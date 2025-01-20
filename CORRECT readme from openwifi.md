@@ -70,4 +70,5 @@ export BOARD_NAME=adrv9361z7035
 <h1>Build Petalinux</h1>
 <p>First you have to get your device tree:</p>
 <pre><code>/path/to/your/Vitis/bin/xsct</code></pre>
-<a src=sdr-cap/Screenshots/gen dts.png></a>
+
+![Screenshot](Screenshots/gen dts.png)
