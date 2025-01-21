@@ -1,6 +1,7 @@
 #!/bin/bash
 # Simple automated bash script by csshark
-#Currently not tested, do not trust it 100%
+# It provides working only with Vivado,Peta and Xilinx in 2021.1. 
+# Visit main branch to build openwifi on later versions.
 
 echo "Please enter the path to the XILINX_DIR (example: /tools/Xilinx):"
 read XILINX_DIR
@@ -25,10 +26,10 @@ cd $OPENWIFI_HW_DIR/adi-hdl/
 git clone -b hdl_2021_r1 https://github.com/analogdevicesinc/hdl.git
 mv hdl/* .
 
-git clone -b xlnx_rebase_v6.1_LTS https://github.com/Xilinx/linux-xlnx.git
+#git clone -b xlnx_rebase_v6.1_LTS https://github.com/Xilinx/linux-xlnx.git
 
-rm $OPENWIFI_DIR/driver/xilinx_dma/xilinx_dma.c
-cp linux-xlnx/drivers/dma/xilinx_dma.c $OPENWIFI_DIR/driver/xilinx_dma/
+#rm $OPENWIFI_DIR/driver/xilinx_dma/xilinx_dma.c
+#cp linux-xlnx/drivers/dma/xilinx_dma.c $OPENWIFI_DIR/driver/xilinx_dma/
 
 cd $OPENWIFI_HW_DIR/
 ./prepare_adi_lib.sh $XILINX_DIR
