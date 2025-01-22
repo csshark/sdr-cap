@@ -82,3 +82,5 @@ export BOARD_NAME=adrv9361z7035
 </code></pre>
 
 <p>Or alternatively we can build devicetree with <code>petalinux-build -c device-tree</code></p>
+
+![Screenshot](Screenshots/sdtgen.png)
