@@ -99,7 +99,7 @@ sdtgen gen_sdt
 <pre>
 Added user layers in Yocto Settings [/home/yourusername/meta-adi/meta-adi-xilinx].
 Set Filesystem to SD (EXT4,BOOT).
-Changed Yocto MACHINE NAME to "zynq-adrv9361-z7035".
+Changed Yocto MACHINE NAME to "zynq-adrv9361-z7035-bob".
 Other Settings kept as they were.
 </pre>
 
