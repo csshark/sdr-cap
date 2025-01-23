@@ -95,7 +95,7 @@ sdtgen gen_sdt
 </code></p>
 <p>Now get into project configuration by typing: <code>petalinux-config --get-hw-description=/path/to/xsa</code>.</p>You can specify a folder where xsa is located, peta will find it automatically, but if selected directory contains another .xsa files specify .xsa file in command above.
 
-<p>In configuration select ensure that you:</p>
+<p>In configuration  ensure that you:</p>
 <pre>
 Added user layers in Yocto Settings [/home/yourusername/meta-adi/meta-adi-xilinx].
 Set Filesystem to SD (EXT4,BOOT).
