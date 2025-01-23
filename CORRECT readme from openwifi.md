@@ -108,12 +108,12 @@ Other Settings kept as they were.
 <p><b>Important! </b>echo the correct dtsi file to the config file like in <a href="https://github.com/analogdevicesinc/meta-adi/blob/main/meta-adi-xilinx/README.md"> meta-adi-xilinx</a>instructions.</p>
 <pre><code>echo "KERNEL_DTB=\"zynq-adrv9361-z7035-bob\"" >> project-spec/meta-user/conf/petalinuxbsp.conf</code></pre>
 <p>Afterwards generate device tree:</p>
-<pre><code>petalinux-build -c device-tree
+<pre><code>cd build
+petalinux-build -c device-tree
 </code></pre>
 
 <p>When all the steps have been done flawlessly, follow the two commands and go make yourself a coffee or two (this process takes a while):</p>
-<pre><code>cd build
-petalinux-build
+<pre><code>petalinux-build
 </code></pre>
 
 <p>If the overall progress percentage reached over 99% (it is usually when rootfs is being built) it usually means your boot image will be correct.</p>
