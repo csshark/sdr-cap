@@ -1,0 +1,1 @@
+<p>The project is called sdr-cap, it is not my FINAL product it's just name that was put into tests.I'm attaching this directory here for configuration inspiration and to compare files with each other in case of problems when building with <a href="CORRECT readme from openwifi.md">CORRECT readme from openwifi<a></a></p>
