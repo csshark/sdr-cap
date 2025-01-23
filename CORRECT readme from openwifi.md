@@ -1,6 +1,6 @@
 <h1>Personal Discovery on <a href="https://github.com/open-sdr/openwifi-hw/?tab=readme-ov-file#build-fpga">Building FPGA</a> with OpenWifi</h1>
 
-<p>This is my own discovery of how to perform actions from the <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi-hw</a> README instructions for building FPGA. Many of the steps are in the wrong order, and the file structure is wrong/uncomplete. Corrections are made on the OpenWifi(main branch) directory structure current for: 19.01.2025. If the developers of the openwifi project have made changes to their project, I am not responsible for the undesired actions of my sh file. </p>
+<p>This is my own discovery of how to perform actions from the <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi-hw</a> README instructions for building FPGA. Many of the steps are in the wrong order, and the file structure is wrong/uncomplete. Corrections are made on the OpenWifi(main branch) directory structure current for: 19.01.2025. If the developers of the openwifi project have made changes to their project, I am not responsible for the undesired actions of my sh file.</p>
 <h2>Instruction</h2>
 <h3>Automated Method:</h3>
 <p>Run script (make sure it has permissions for launching) and enter values script asks for.</p>
@@ -64,11 +64,12 @@ export BOARD_NAME=adrv9361z7035
 </code></pre>
 
 <h3>Upgrading to a higher version:</h3>
-
+<b>Note</b>: Upgraded image is intended for development and does not include rootfs with scripts provided by <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi</a>OpenWifi.
 <p>Build Project on Higher version of Vivado and do autoupgrading of IPcores. I highly recommend to check meta-adi repository before targeting <code>master</code> branch. You can additionally use <a href="https://github.com/csshark/sdr-cap/blob/main/VivadoComparer.sh">VivadoComparer.sh</a> to verify what changed in new relese and what should you rebuild manually. For me latest Vivado and adi release doesn't work well, so I recommend to chose version 2023.2.</p>
 
 <h1>Build Petalinux</h1>
-<p>If you want to generate devicetree out of Petalinux:</p>
+<p><b>Note:</b>Instruction is tested only on ADRV9361-Z7035-BOB platform, this document follows steps required to build petalinux on specified platform required for SDR-CAP.</p>
+<p>If you want to generate devicetree out of Petalinux (optional, can skip this part):</p>
 <pre><code>/path/to/your/Vitis/bin/xsct</code></pre>
 
 ![Screenshot](Screenshots/gen_dts.png)
@@ -80,7 +81,38 @@ sdtgen set_dt_param -xsa /path/to/xsa #ex: /home/user if xsa is stored in user d
 sdtgen gen_sdt
 </code></pre>
 
-![Screenshot](Screenshots/generating_dts.png)
-
 <p>Now prepare to build petalinux:</p>
+<p>From your home location clone:</p>
+<pre><code>git clone -b 2023_R2 https://github.com/analogdevicesinc/meta-adi.git</code></pre>
+<p>And source Petalinux Tools:</p>
 <pre><code>source /path/to/petalinux/settings.sh</code></pre>
+
+<p>Petalinux CLI should appear.</p>
+
+![Screenshot](Screenshots/peta1.png)
+
+<p>As shown on the screenshot above it is time to create petalinux project. For this purpose use command: <code>petalinux-create -t project -n yourprojectname --template zynq
+</code></p>
+<p>Now get into project configuration by typing: <code>petalinux-config --get-hw-description=/path/to/xsa</code>.</p>You can specify a folder where xsa is located, peta will find it automatically, but if selected directory contains another .xsa files specify .xsa file in command above.
+
+<p>In configuration select ensure that you:</p>
+<pre>
+Added user layers in Yocto Settings [/home/yourusername/meta-adi/meta-adi-xilinx].
+Set Filesystem to SD (EXT4,BOOT).
+Changed Yocto MACHINE NAME to "zynq-adrv9361-z7035-bob".
+Other Settings kept as they were.
+</pre>
+
+[!Screenshot](Screenshots/peta-config-written.png)
+
+When all the steps have been done flawlessly, follow the two commands and go make yourself a coffee or two (this process takes a while):
+<pre><code>cd build
+petalinux-build
+</code></pre>
+
+<p>If the overall progress percentage reached over 99% (it is usually when rootfs is being built) it usually means your boot image will be correct.</p>
+<h2>Generate Petalinux bootable image</h2>
+<p>I follow this command for my enviroment, but you can generate files that meet your needs:</p>
+<pre><code>petalinux-package --boot --fsbl --fpga --u-boot</code></pre>
+
+<p>The last step is to prepare BOOT and EXT4 partitions and project is finally migrated to 2023.2 release.</p>
