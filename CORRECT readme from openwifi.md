@@ -103,9 +103,9 @@ Changed Yocto MACHINE NAME to "zynq-adrv9361-z7035-bob".
 Other Settings kept as they were.
 </pre>
 
-[!Screenshot](Screenshots/peta_cfg_done.png)
+![Screenshot](Screenshots/peta_cfg_done.png)
 
-When all the steps have been done flawlessly, follow the two commands and go make yourself a coffee or two (this process takes a while):
+<p>When all the steps have been done flawlessly, follow the two commands and go make yourself a coffee or two (this process takes a while):</p>
 <pre><code>cd build
 petalinux-build
 </code></pre>
