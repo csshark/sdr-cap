@@ -68,17 +68,4 @@ export BOARD_NAME=adrv9361z7035
 <p>Build Project on Higher version of Vivado and do autoupgrading of IPcores. I highly recommend to check meta-adi repository before targeting <code>master</code> branch. You can additionally use <a href="https://github.com/csshark/sdr-cap/blob/main/VivadoComparer.sh">VivadoComparer.sh</a> to verify what changed in new relese and what should you rebuild manually.</p>
 
 <h1>Build Petalinux</h1>
-<p>First you have to get your device tree:</p>
-<pre><code>/path/to/your/Vitis/bin/xsct</code></pre>
 
-![Screenshot](Screenshots/gen_dts.png)
-
-<p>Use three commands for xsct 2023.2 Tool:</p>
-<pre><code>
-  sdtgen set_dt_param -board_dts /path/to/board_interface_preferences.xml #usually it's in Vivado/20xx.x/data/board_interface_preferences.xml
-  sdtgen set_dt_param -dir /path/to/output/dir #here output products are gonna be generated
-  sdtgen set_dt_param -xsa /path/to/xsa #ex: /home/user if xsa is stored in user directory
-  sdtgen gen_sdt
-</code></pre>
-
-<p>Or alternatively we can build devicetree with <code>petalinux-build -c device-tree</code></p>
