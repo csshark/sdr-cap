@@ -119,6 +119,7 @@ petalinux-build -c device-tree
 <p>If the overall progress percentage reached over 99% (it is usually when rootfs is being built) it usually means your boot image will be correct.</p>
 <h2>Generate Petalinux bootable image</h2>
 <p>Use customized bash script. Remember to match your .xsa file name and to reach .elf</p>
-<p><code>./gen_boot_bin.sh /home/user/projectname/project-spec/hw-description/system.xsa u-boot.elf scriptboot</code></p>
+<p><code>./gen_boot_bin.sh /path/to/system.xsa /path/to/u-boot.elf scriptboot</code></p>
+<p>This bash file is not officially mentioned by openwifi authors in documentation. Since u-boot and system.xsa are in the same directory, there is no need to specify path.</p>
 <p>The last step is to prepare BOOT and rootfs(EXT4) partitions on your SD card  and project is finally migrated to 2023.2 release.</p>
 <p>If you want to use scripts and tools on user space they will have to be compiled.</p>
