@@ -1,7 +1,7 @@
 #!/bin/bash
-# Simple automated bash script by csshark
-#Currently not tested, do not trust it 100%
-
+# Simple automayion bash script by csshark
+# Tested script - successfully built project on Ubuntu 22.04LTS 
+# It provides automated replacement of dma driver directly from Xilinx
 echo "Please enter the path to the XILINX_DIR (example: /tools/Xilinx):"
 read XILINX_DIR
 
@@ -34,7 +34,6 @@ cd $OPENWIFI_HW_DIR/
 ./prepare_adi_lib.sh $XILINX_DIR
 ./get_ip_openofdm_rx.sh
 
-mv $OPENWIFI_HW_IMG_DIR/boards/$BOARD_NAME/sdk $OPENWIFI_DIR/kernel_boot/boards/$BOARD_NAME/
 
 cd $OPENWIFI_HW_DIR/boards/$BOARD_NAME
 ../create_ip_repo.sh $XILINX_DIR
