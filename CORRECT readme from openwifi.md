@@ -46,7 +46,6 @@ export BOARD_NAME=adrv9361z7035
 <pre><code>./get_ip_openofdm_rx.sh</code></pre>
 <h2>Preparing board</h2>
 
-<p>It's required to move the "sdk" directory from <code>/openwifi-hw-img/boards/adrv9361z7035</code> to <code>/openwifi/kernel_boot/boards/adrv9361z7035</code></p>
 <pre><code>./prepare_adi_board_ip.sh $XILINX_DIR $BOARD_NAME</code></pre>
 
 <h2>Generating IPcores</h2>
@@ -61,6 +60,11 @@ export BOARD_NAME=adrv9361z7035
 
 <pre><code>source ./openwifi.tcl
 # wait for Vivado to finish building and generate bitstream.
+</code></pre>
+
+<p>Now verify project by running</p>
+<pre><code>cd openwifi-hw/boards
+./sdk_update.sh $BOARD_NAME $OPENWIFI_HW_IMG_DIR
 </code></pre>
 
 <h3>Upgrading to a higher version:</h3>
