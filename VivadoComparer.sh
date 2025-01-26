@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# Author: csshark, 2025 
+# Script verifies changes in IPcores for the same project to help user while migrating.
 if [ $# -ne 2 ]; then
   echo "Usage: $0 <old_vivado_project_dir> <new_vivado_project_dir>"
   exit 1
