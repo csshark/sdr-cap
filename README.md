@@ -34,7 +34,7 @@
 cd sdr-cap</code></pre>
       <li>Write image using balena or dd command into microSD card.</li>
     </li>
-    <li>Run the script:
+    <li>Run the script (current location is /root/openwifi/):
         <pre><code>./sniff.py</code></pre>
     </li>
     <li>Configure your ADRV9361-Z7035 sniffer with net-tools.</li>
