@@ -37,15 +37,16 @@ cd sdr-cap</code></pre>
     <li>Run the script (current location is /root/openwifi/):
         <pre><code>./sniff.py</code></pre>
 </ol>
-<p>output should be written into "cap-current-date-and-time.pcap" file</p>
+<p>output should be written into "captured_packets.pcap" file</p>
 
 <h2>Usage</h2>
 <p>Instructions on how to use the SDR-CAP tool will go here.</p>
 
 <h2>Packet Capture</h2>
-<img src="path/to/screenshot1.png" alt="Screenshot 1" />
-<img src="path/to/screenshot2.png" alt="Screenshot 2" />
-<img src="path/to/screenshot3.png" alt="Screenshot 3" />
+<img src="/Screenshots/sniff_standard.png" alt="Screenshot 1" />
+<img src="/Screenshots/sniff_display.png" alt="Screenshot 2" />
+<p>SDR-CAP aplha working.</p>
+<img src="/Screenshots/pcap.png" alt="Screenshot 3" />
 
 <h2>License</h2>
 <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
