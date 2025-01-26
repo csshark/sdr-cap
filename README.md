@@ -19,7 +19,7 @@
 
 <h3>Prerequisites</h3>
 <ul>
-    <li>Ubuntu 22.04LTS(tested, but other OS might work too)</li>
+    <li>Ubuntu 20.04LTS, 22.04LTS(tested, but other OS might work too)</li>
     <li>Xilinx Vivado 2023.2</li>
     <li>Petalinux Tools 2023.2</li>
     <li>Xilinx SDK (if applicable)</li>
@@ -36,10 +36,6 @@ cd sdr-cap</code></pre>
     </li>
     <li>Run the script (current location is /root/openwifi/):
         <pre><code>./sniff.py</code></pre>
-    </li>
-    <li>Configure your ADRV9361-Z7035 sniffer with net-tools.</li>
-    <li>Start capturing network packets.</li>
-    <li><code>./capture_start</code></li>
 </ol>
 <p>output should be written into "cap-current-date-and-time.pcap" file</p>
 
