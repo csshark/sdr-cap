@@ -32,10 +32,12 @@
     <li>Clone the repository:
         <pre><code>git clone https://github.com/csshark/sdr-cap.git
 cd sdr-cap</code></pre>
-      <li>Write image using balena or dd command into microSD card.</li>
+      <li>Build OpenWifi image from my tutorial.</li>
+      <li>Compile my sniffer after placing it into user space. (Check <a href="/openwifi2023-petalinux/README.md">driver installation</a>)</li>
     </li>
     <li>Run the script (current location is /root/openwifi/):
-        <pre><code>./sniff.py</code></pre>
+        <pre><code>./sniff.sh</code></pre>
+    </li>
 </ol>
 <p>output should be written into "captured_packets.pcap" file</p>
 
