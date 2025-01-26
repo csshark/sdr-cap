@@ -21,6 +21,7 @@
 <ul>
     <li>Ubuntu 22.04LTS(tested, but other OS might work too)</li>
     <li>Xilinx Vivado 2023.2</li>
+    <li>Petalinux Tools 2023.2</li>
     <li>Xilinx SDK (if applicable)</li>
     <li>SDR ADRV9361-Z7035</li>
     <li>microSD card <=16GB</li>
@@ -31,10 +32,10 @@
     <li>Clone the repository:
         <pre><code>git clone https://github.com/csshark/sdr-cap.git
 cd sdr-cap</code></pre>
+      <li>Write image using balena or dd command into microSD card.</li>
     </li>
-    <li>Run the setup scripts:
-        <pre><code>./prepare_hardware.sh</code></pre>
-        <pre><code>./inc_tools.sh</code></pre>
+    <li>Run the script:
+        <pre><code>./sniff.py</code></pre>
     </li>
     <li>Configure your ADRV9361-Z7035 sniffer with net-tools.</li>
     <li>Start capturing network packets.</li>
@@ -62,3 +63,5 @@ cd sdr-cap</code></pre>
 
 <h2>Additional Information</h2>
 <p>For any questions or issues, feel free to open an issue in the GitHub repository or contact the project maintainers.</p>
+<p><b>Note:</b>This tool is going to be developed on its own. That means the OFDM and system structure is going to be created by me.</p>
+<p>For now it is just fixed openwifi + migration tutorial with additional packet capture tool.</p>
