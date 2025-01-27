@@ -69,3 +69,33 @@ export BOARD_NAME=adrv9361z7035
 
 <h1>Build Petalinux</h1>
 
+<p>Create petalinux project. For this purpose use command: <code>petalinux-create -t project -n yourprojectname --template zynq
+</code></p>
+<p>Now get into project configuration by typing: <code>petalinux-config --get-hw-description=/path/to/xsa</code>.</p>You can specify a folder where xsa is located, peta will find it automatically, but if selected directory contains another .xsa files specify .xsa file in command above.
+
+<p>In configuration  ensure that you:</p>
+<pre>
+Added user layers in Yocto Settings [/home/yourusername/meta-adi/meta-adi-xilinx].
+Set Filesystem to SD (EXT4,BOOT).
+Changed Yocto MACHINE NAME to "zynq-adrv9361-z7035-bob".
+Other Settings kept as they were.
+</pre>
+
+![Screenshot](Screenshots/peta_cfg_done.png)
+
+<p><b>Important! </b>echo the correct dtsi file to the config file like in <a href="https://github.com/analogdevicesinc/meta-adi/blob/main/meta-adi-xilinx/README.md"> meta-adi-xilinx</a>instructions.</p>
+<pre><code>echo "KERNEL_DTB=\"zynq-adrv9361-z7035-bob\"" >> project-spec/meta-user/conf/petalinuxbsp.conf</code></pre>
+<p>Afterwards generate device tree:</p>
+<pre><code>cd build
+petalinux-build -c device-tree
+</code></pre>
+
+<p>When all the steps have been done flawlessly, follow the two commands and go make yourself a coffee or two (this process takes a while):</p>
+<pre><code>petalinux-build
+</code></pre>
+
+<p>If the overall progress percentage reached over 99% (it is usually when rootfs is being built) it usually means your boot image will be correct.</p>
+<h2>Generate Petalinux bootable image</h2>
+<p>Use customized bash script. Remember to match your .xsa file name and to reach .elf</p>
+<p><code>./gen_boot_bin.sh /path/to/system.xsa /path/to/u-boot.elf scriptboot</code></p>
+<p>This bash file is not officially mentioned by openwifi authors in documentation. Since u-boot and system.xsa are in the same directory, there is no need to specify path. For guide how to start with manually built OpenWifi image visit: <a href="https://github.com/open-sdr/openwifi/blob/master/doc/img_build_instruction/kuiper.md">kurpier.md</a> from openwifi.</p>.
