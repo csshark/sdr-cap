@@ -45,7 +45,7 @@ cd sdr-cap</code></pre>
 <h2>Packet Capture</h2>
 <img src="/Screenshots/sniff_display.png" alt="Screenshot 1" />
 <img src="/Screenshots/pcap.png" alt="Screenshot 2" />
-<p>SDR-CAP aplha working.</p>
+<p>SDR-CAP aplha working properly.</p>
 
 <h2>License</h2>
 <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
