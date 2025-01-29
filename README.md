@@ -53,12 +53,12 @@ cd sdr-cap</code></pre>
 
 <h2>Acknowledgements</h2>
 <ul>
-    <li>OpenWifi project contributors</li>
+    <li><a href="https://github.com/open-sdr/openwifi">OpenWifi</a> project contributors</li>
     <li><a href="https://www.wireshark.org/">Wireshark</a> for inspiration</li>
-    <li>AMD Xilinx and Analog Devices Inc.</li>
+    <li><a href="https://www.amd.com/en/corporate/xilinx-acquisition.html">AMD Xilinx and Analog Devices Inc.</a></li>
 </ul>
 
 <h2>Additional Information</h2>
 <p>For any questions or issues, feel free to open an issue in the GitHub repository or contact the project maintainers.</p>
-<p><b>Note:</b>This tool is going to be developed on its own. That means the OFDM and system structure is going to be created by me.</p>
+<p><b>Note:</b>SDR-CAP is going to be developed on its own. That means the OFDM and system structure is going to be created by me.</p>
 <p>For now it is just fixed openwifi + migration tutorial with additional packet capture tool.</p>
