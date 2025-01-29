@@ -43,10 +43,9 @@ cd sdr-cap</code></pre>
 <p>output should be written into "capture.pcap" file</p>
 
 <h2>Packet Capture</h2>
-<img src="/Screenshots/sniff_standard.png" alt="Screenshot 1" />
-<img src="/Screenshots/sniff_display.png" alt="Screenshot 2" />
+<img src="/Screenshots/sniff_display.png" alt="Screenshot 1" />
+<img src="/Screenshots/pcap.png" alt="Screenshot 2" />
 <p>SDR-CAP aplha working.</p>
-<img src="/Screenshots/pcap.png" alt="Screenshot 3" />
 
 <h2>License</h2>
 <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
