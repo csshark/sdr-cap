@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://i.ibb.co/5v97yzm/sdr-cap.jpg" width=300px; heigth=300px;>
 </p>
-<p> &ensp; SDR-CAP by csshark is a network sniffer solution built on the OpenWifi project. It leverages an SDR FPGA-based architecture to capture and analyze network packets, providing functionality similar to Wireshark. Additionally, it includes a custom driver that enables the representation of network packets for effective analysis. You can also find detailed instructions for building the openwifi project on which SDR-CAP is based in the project directory.</p>
+<p> &ensp; SDR-CAP by csshark is a network sniffer solution built on the OpenWifi project. It leverages an SDR FPGA-based architecture to capture and analyze network packets. Project includes a custom driver that enables the representation of network packets for effective analysis. You can also find detailed instructions for building the openwifi project on which SDR-CAP is based in the project directory. An ISO/OSI model-compliant representation of network packets has been introduced, as well as the ability to explore the flow of network traffic capture, thanks to .pcap file support.</p>
 
 <h2>Output products</h2>
 <ul>
@@ -19,36 +19,34 @@
 
 <h3>Prerequisites</h3>
 <ul>
-    <li>Ubuntu 22.04LTS(tested, but other OS might work too)</li>
+    <li>Ubuntu 20.04LTS/22.04LTS/24.04LTS</li>
     <li>Xilinx Vivado 2023.2</li>
+    <li>Petalinux Tools 2023.2</li>
     <li>Xilinx SDK (if applicable)</li>
     <li>SDR ADRV9361-Z7035</li>
     <li>microSD card <=16GB</li>
 </ul>
-
+<p><b>Note: </b>Ubuntu 24.04LTS might require manual installation of some packages from source, previous distributions are recommended.</p>
+      
 <h3>Build Sniffer-Chip Steps:</h3>
 <ol>
     <li>Clone the repository:
         <pre><code>git clone https://github.com/csshark/sdr-cap.git
 cd sdr-cap</code></pre>
+      <li>Build OpenWifi image from my tutorial.</li>
+      <li>Compile my sniffer after placing it into user space. (Check <a href="/openwifi2023-petalinux/README.md">driver installation</a>)</li>
     </li>
-    <li>Run the setup scripts:
-        <pre><code>./prepare_hardware.sh</code></pre>
-        <pre><code>./inc_tools.sh</code></pre>
+    <li>Run the script (current location is /root/openwifi/):
+        <pre><code>./sniff.sh</code></pre>
     </li>
-    <li>Configure your ADRV9361-Z7035 sniffer with net-tools.</li>
-    <li>Start capturing network packets.</li>
-    <li><code>./capture_start</code></li>
 </ol>
-<p>output should be written into "cap-current-date-and-time.pcap" file</p>
-
-<h2>Usage</h2>
-<p>Instructions on how to use the SDR-CAP tool will go here.</p>
+<p>output should be written into "captured_packets.pcap" file</p>
 
 <h2>Packet Capture</h2>
-<img src="path/to/screenshot1.png" alt="Screenshot 1" />
-<img src="path/to/screenshot2.png" alt="Screenshot 2" />
-<img src="path/to/screenshot3.png" alt="Screenshot 3" />
+<img src="/Screenshots/sniff_standard.png" alt="Screenshot 1" />
+<img src="/Screenshots/sniff_display.png" alt="Screenshot 2" />
+<p>SDR-CAP aplha working.</p>
+<img src="/Screenshots/pcap.png" alt="Screenshot 3" />
 
 <h2>License</h2>
 <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
@@ -62,3 +60,5 @@ cd sdr-cap</code></pre>
 
 <h2>Additional Information</h2>
 <p>For any questions or issues, feel free to open an issue in the GitHub repository or contact the project maintainers.</p>
+<p><b>Note:</b>This tool is going to be developed on its own. That means the OFDM and system structure is going to be created by me.</p>
+<p>For now it is just fixed openwifi + migration tutorial with additional packet capture tool.</p>
