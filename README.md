@@ -48,7 +48,7 @@ cd sdr-cap</code></pre>
 <p>SDR-CAP aplha working properly.</p>
 
 <h2>License</h2>
-<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+<p>This project is licensed under the AGPL License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
 
 <h2>Acknowledgements</h2>
 <ul>
