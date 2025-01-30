@@ -34,7 +34,7 @@
         <pre><code>git clone https://github.com/csshark/sdr-cap.git
 cd sdr-cap</code></pre>
       <li>Build OpenWifi image from my tutorial.</li>
-      <li>Compile my sniffer after placing it into user space. (Check <a href="/openwifi2023-petalinux/README.md">driver installation</a>)</li>
+      <li>Compile my sniffer after placing it into user space. (Check <a href="/sniff_driver/README.md">driver installation</a>)</li>
     </li>
     <li>Run the script (current location is /root/openwifi/):
         <pre><code>./sniff.sh</code></pre>
