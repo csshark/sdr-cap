@@ -1,0 +1,1 @@
+<p>The sniff folder needs to be placed in <code>/media/user/rootfs/root/openwifi/</code>and its <a href=/driver/sniff.sh>bash script</a> needs to be placed into <code>/media/user/rootfs/root/openwifi/</code> separately from its folder to have all tools in one location.</p>
