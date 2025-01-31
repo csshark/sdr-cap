@@ -45,7 +45,7 @@ cd sdr-cap</code></pre>
 <p>output should be written into "captured_packets.pcap" file</p>
 
 <h2>Packet Capture</h2>
-<img src="/Screenshots/sniff_display.png" alt="Screenshot 2" />
+<img src="/Screenshots/Sniffer-final.png" alt="Screenshot 2" />
 <p>SDR-CAP aplha working.</p>
 <img src="/Screenshots/pcap.png" alt="Screenshot 3" />
 
