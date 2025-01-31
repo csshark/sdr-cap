@@ -14,4 +14,4 @@ cd "$SNIFF_DIR"
 
 
 echo "Starting the packet sniffer on interface sdr0..."
-sudo ./packet_sniffer sdr0
+sudo ./packet_sniffer sdr0 capture.pcap
