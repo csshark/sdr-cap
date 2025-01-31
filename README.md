@@ -17,12 +17,14 @@
 
 <h2>Getting Started</h2>
 
+<p>You are on the <code>openwifi_build_only_2021.1</code> branch. This branch supports building OpenWifi project in 2021.1 version <b>only</b>.</p>
+
 <h3>Prerequisites</h3>
 <ul>
     <li>Ubuntu 20.04LTS/22.04LTS/24.04LTS</li>
-    <li>Xilinx Vivado 2023.2</li>
-    <li>Petalinux Tools 2023.2</li>
-    <li>Xilinx SDK (if applicable)</li>
+    <li>Xilinx Vivado 2021.1</li>
+    <li>Petalinux Tools 2021.1</li>
+    <li>AMD Vitis 2021.1</li>
     <li>SDR ADRV9361-Z7035</li>
     <li>microSD card <=16GB</li>
 </ul>
