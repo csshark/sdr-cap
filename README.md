@@ -41,7 +41,7 @@ cd sdr-cap</code></pre>
         <pre><code>./sniff.sh</code></pre>
     </li>
 </ol>
-<p>output should be written into "captured_packets.pcap" file</p>
+<p>output should be written into "capture.pcap" file</p>
 
 <h2>Packet Capture</h2>
 <img src="/Screenshots/Sniffer-final.png" alt="Screenshot 2" />
