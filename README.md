@@ -20,9 +20,9 @@
 <h3>Prerequisites</h3>
 <ul>
     <li>Ubuntu 20.04LTS/22.04LTS/24.04LTS</li>
-    <li>Xilinx Vivado 2023.2</li>
-    <li>Petalinux Tools 2023.2</li>
-    <li>Xilinx SDK (if applicable)</li>
+    <li>Xilinx Vivado 2023.2 & Xilinx Vivado 2021.1</li>
+    <li>Petalinux Tools 2023.2 & Petalinux Tools 2021.1</li>
+    <li>AMD Vitis 2023.2 & AMD Vitis 2021.1</li>
     <li>SDR ADRV9361-Z7035</li>
     <li>microSD card <=16GB</li>
 </ul>
@@ -43,8 +43,7 @@ cd sdr-cap</code></pre>
 <p>output should be written into "captured_packets.pcap" file</p>
 
 <h2>Packet Capture</h2>
-<img src="/Screenshots/sniff_standard.png" alt="Screenshot 1" />
-<img src="/Screenshots/sniff_display.png" alt="Screenshot 2" />
+<img src="Screenshots/Sniffer-final.png" alt="Screenshot 1" />
 <p>SDR-CAP aplha working.</p>
 <img src="/Screenshots/pcap.png" alt="Screenshot 3" />
 
