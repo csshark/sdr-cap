@@ -5,9 +5,14 @@
 #include <netinet/tcp.h>
 #include <netinet/udp.h>
 #include <arpa/inet.h>
+#include <signal.h>
+
+pcap_t *handle;
+pcap_dumper_t *dumpfile;
+volatile sig_atomic_t capture_active = 1;  
 
 void packet_handler(u_char *dumpfile, const struct pcap_pkthdr *header, const u_char *packet) {
-    pcap_dump(dumpfile, header, packet); // Write the packet to the file
+    pcap_dump(dumpfile, header, packet);
 
     printf("\n+------------------------+\n");
     printf("| Packet Length: %-7d |\n", header->len);
@@ -33,11 +38,15 @@ void packet_handler(u_char *dumpfile, const struct pcap_pkthdr *header, const u_
     printf("+------------------------+\n");
 }
 
+void stop_capture(int signum) {
+    capture_active = 0;
+    printf("\nStopping packet capture...\n");
+    pcap_breakloop(handle);  
+}
+
 int main(int argc, char *argv[]) {
     char *device;
     char errbuf[PCAP_ERRBUF_SIZE];
-    pcap_t *handle;
-    pcap_dumper_t *dumpfile;
 
     if (argc != 3) {
         fprintf(stderr, "Usage: %s <interface> <output.pcap>\n", argv[0]);
@@ -51,16 +60,17 @@ int main(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
-    // Open the output file
     dumpfile = pcap_dump_open(handle, argv[2]);
     if (dumpfile == NULL) {
         fprintf(stderr, "Could not open dump file: %s\n", pcap_geterr(handle));
         return EXIT_FAILURE;
     }
 
-    printf("Listening on %s...\n", device);
-    
-    pcap_loop(handle, 0, packet_handler, (u_char *)dumpfile);
+    signal(SIGINT, stop_capture); 
+
+    printf("Listening on %s... Press Ctrl+C to stop capture.\n", device);
+
+    pcap_loop(handle, -1, packet_handler, (u_char *)dumpfile);
 
     pcap_dump_close(dumpfile);
     pcap_close(handle);
