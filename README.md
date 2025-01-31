@@ -12,7 +12,6 @@
     <li>User-Friendly Build FPGA Guide for the OpenWifi project</li>
     <li>Automated building OpenWifi script</li>
     <li>Vivado IPcore comparison script</li>
-    <li>Valid Vivado License</li>
 </ul>
 
 <h2>Getting Started</h2>
@@ -27,6 +26,7 @@
     <li>AMD Vitis 2021.1</li>
     <li>SDR ADRV9361-Z7035</li>
     <li>microSD card <=16GB</li>
+    <li>Valid Vivado License</li>
 </ul>
 <p><b>Note: </b>Ubuntu 24.04LTS might require manual installation of some packages from source, previous distributions are recommended.</p>
       
