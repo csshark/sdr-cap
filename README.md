@@ -12,7 +12,6 @@
     <li>User-Friendly Build FPGA Guide for the OpenWifi project</li>
     <li>Automated building OpenWifi script</li>
     <li>Vivado IPcore comparison script</li>
-    <li>Automated SDR-CAP build script</li>
 </ul>
 
 <h2>Getting Started</h2>
