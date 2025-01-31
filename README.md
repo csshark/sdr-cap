@@ -57,6 +57,6 @@ cd sdr-cap</code></pre>
 </ul>
 
 <h2>Additional Information</h2>
-<p>For any questions or issues, feel free to open an issue in the GitHub repository or contact the project maintainers.</p>
+<p>For any questions or issues, feel free to open an issue in the GitHub repository or contact the project maintainers. When you got into any troubles while building OpenWifi reach <a href="https://github.com/open-sdr/openwifi"/>Openwifi</a> issues and common problems support first.</p>
 <p><b>Note:</b> SDR-CAP is going to be developed on its own. That means the OFDM and system structure is going to be created by me.</p>
 <p>For now it is just fixed openwifi + migration tutorial with additional packet capture tool.</p>
