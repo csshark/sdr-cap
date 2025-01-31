@@ -43,9 +43,9 @@ cd sdr-cap</code></pre>
 
 <h2>Packet Capture</h2>
 <img src="Screenshots/Sniffer-final.png" alt="Screenshot 1" />
-<p>SDR-CAP aplha working.</p>
+<p>SDR-CAP represents user friendly frame design of captured packets, including source, destination, IP and protocol.</p>
 <img src="/Screenshots/pcap.png" alt="Screenshot 3" />
-
+.pcap file is being stored (for latest version is in sniff dir!)
 <h2>License</h2>
 <p>This project is licensed under the AGPL License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
 
@@ -58,5 +58,5 @@ cd sdr-cap</code></pre>
 
 <h2>Additional Information</h2>
 <p>For any questions or issues, feel free to open an issue in the GitHub repository or contact the project maintainers.</p>
-<p><b>Note:</b>SDR-CAP is going to be developed on its own. That means the OFDM and system structure is going to be created by me.</p>
+<p><b>Note:</b> SDR-CAP is going to be developed on its own. That means the OFDM and system structure is going to be created by me.</p>
 <p>For now it is just fixed openwifi + migration tutorial with additional packet capture tool.</p>
