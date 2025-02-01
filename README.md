@@ -41,7 +41,8 @@ cd sdr-cap</code></pre>
     </li>
 </ol>
 <p>output should be written into "capture.pcap" file</p>
-
+<!--<h3>Quick Install</h3>
+<p>Download prepared <a href=""/>image</a>.</p>-->
 <h2>Packet Capture</h2>
 <img src="Screenshots/Sniffer-final.png" alt="Screenshot 1" />
 <p>SDR-CAP represents user friendly frame design of captured packets, including source, destination, IP and protocol.</p>
