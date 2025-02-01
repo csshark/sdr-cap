@@ -96,4 +96,4 @@ petalinux-build -c device-tree
 <h2>Generate Petalinux bootable image</h2>
 <p>Use customized bash script. Remember to match your .xsa file name and to reach .elf</p>
 <p><code>./gen_boot_bin.sh /path/to/system.xsa /path/to/u-boot.elf scriptboot</code></p>
-<p>This bash file is not officially mentioned by openwifi authors in documentation. Since u-boot and system.xsa are in the same directory, there is no need to specify path. For guide how to start with manually built OpenWifi image visit: <a href="https://github.com/open-sdr/openwifi/blob/master/doc/img_build_instruction/kuiper.md">kurpier.md</a> from openwifi.</p>.
+<p>This bash file is not officially mentioned by openwifi authors in documentation. Since u-boot and system.xsa are in the same directory, there is no need to specify path. For guide how to start with manually built OpenWifi image visit: <a href="https://github.com/open-sdr/openwifi/blob/master/doc/img_build_instruction/kuiper.md">kurpier.md</a> from openwifi.</p>
