@@ -16,7 +16,7 @@
 
 <h2>Getting Started</h2>
 
-<p>You are on the <code>openwifi_build_only_2021.1</code> branch. This branch supports building OpenWifi project in 2021.1 version <b>only</b>.</p>
+<p>You are in the <code>openwifi_build_only_2021.1</code> branch. This branch supports building OpenWifi project in 2021.1 version <b>only</b>.</p>
 
 <h3>Prerequisites</h3>
 <ul>
