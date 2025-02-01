@@ -80,9 +80,7 @@ Set Filesystem to SD (EXT4,BOOT).
 Changed Yocto MACHINE NAME to "zynq-adrv9361-z7035-bob".
 Other Settings kept as they were.
 </pre>
-
-![Screenshot](Screenshots/peta_cfg_done.png)
-
+<p>Now exit petalinux-config</p>
 <p><b>Important! </b>echo the correct dtsi file to the config file like in <a href="https://github.com/analogdevicesinc/meta-adi/blob/main/meta-adi-xilinx/README.md"> meta-adi-xilinx</a>instructions.</p>
 <pre><code>echo "KERNEL_DTB=\"zynq-adrv9361-z7035-bob\"" >> project-spec/meta-user/conf/petalinuxbsp.conf</code></pre>
 <p>Afterwards generate device tree:</p>
