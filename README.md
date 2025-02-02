@@ -41,7 +41,7 @@ cd sdr-cap</code></pre>
     </li>
 </ol>
 <p>output should be written into "capture.pcap" file</p>
-<<h3>Quick Install</h3>
+<h3>Quick Install</h3>
 <p>Download prepared <a href="https://drive.google.com/file/d/1vfkIr7T_DLN2Nw3YSG49BC3wCzOfxqd2/view?usp=drive_link"/>image</a>.</p>
 <h2>Packet Capture</h2>
 <img src="Screenshots/Sniffer-final.png" alt="Screenshot 1" />
