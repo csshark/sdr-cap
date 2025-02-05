@@ -37,7 +37,7 @@ cd sdr-cap</code></pre>
       <li>Compile my sniffer after placing it into user space. (Check <a href="/sniff_driver/README.md">driver installation</a>)</li>
     </li>
     <li>Run the script (current location is /root/openwifi/):
-        <pre><code>./sniff.sh</code></pre>
+        <pre><code>sudo ./sniff.sh</code></pre>
     </li>
 </ol>
 <p>output should be written into "capture.pcap" file</p>
