@@ -42,7 +42,7 @@ cd sdr-cap</code></pre>
 </ol>
 <p>output should be written into "capture.pcap" file</p>
 <h3>Quick Install</h3>
-<p>Download prepared <a href="https://drive.google.com/file/d/1vfkIr7T_DLN2Nw3YSG49BC3wCzOfxqd2/view?usp=drive_link"/>image</a> and use dd or BalenaEtcher to make bootable micro SD card. The image is built on 2023.2 enviroments - support provided.</p>
+<p>Download prepared <a href="https://drive.google.com/file/d/1vfkIr7T_DLN2Nw3YSG49BC3wCzOfxqd2/view?usp=drive_link"/>image</a> and use dd or <a href="https://etcher.balena.io/#download-etcher">BalenaEtcher</a> to make bootable micro SD card. The image is built on 2023.2 enviroments - support provided.</p>
 <h2>Packet Capture</h2>
 <img src="Screenshots/Sniffer-final.png" alt="Screenshot 1" />
 <p>SDR-CAP represents user friendly frame design of captured packets, including source, destination, IP and protocol.</p>
