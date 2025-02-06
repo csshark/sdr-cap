@@ -1,6 +1,6 @@
 <h1>Personal Discovery on <a href="https://github.com/open-sdr/openwifi-hw/?tab=readme-ov-file#build-fpga">Building FPGA</a> with OpenWifi</h1>
 
-<p>This is my own discovery of how to perform actions from the <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi-hw</a> README instructions for building FPGA. Many of the steps are in the wrong order, and the file structure is wrong/uncomplete. Corrections are made on the OpenWifi(main branch) directory structure current for: 19.01.2025. If the developers of the openwifi project have made changes to their project, I am not responsible for the undesired actions of my sh file. </p>
+<p>This is my own discovery of how to perform actions from the <a href="https://github.com/open-sdr/openwifi-hw">open-sdr/openwifi-hw</a> README instructions for building FPGA. Many of the steps are in the wrong order and the file structure is wrong/uncomplete. Corrections are made on the OpenWifi(main branch) directory structure current for: 19.01.2025. If the developers of the openwifi project have made changes to their project, I am not responsible for the undesired actions of my sh file. </p>
 <h2>Instruction</h2>
 <h3>Automated Method:</h3>
 <p>Run script (make sure it has permissions for launching) and enter values script asks for.</p>
