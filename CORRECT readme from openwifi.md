@@ -68,7 +68,7 @@ export BOARD_NAME=adrv9361z7035
 </code></pre>
 
 <h3>Upgrading to a higher version:</h3>
-<b>Note</b>: Upgraded image is intended for development and does not include rootfs with scripts provided by <a href="https://github.com/open-sdr/openwifi-hw">OpenWifi</a>.
+<b>Note</b>: Upgraded image is intended for development and does not include rootfs with scripts provided by <a href="https://github.com/open-sdr/openwifi-hw">OpenWifi. To get rootfs make bootable micro SD card from prepared <a href="https://drive.google.com/file/d/1vfkIr7T_DLN2Nw3YSG49BC3wCzOfxqd2/view"/>image</a>.
 <p>Build Project on Higher version of Vivado and do autoupgrading of IPcores. I highly recommend to check meta-adi repository before targeting <code>master</code> branch. You can additionally use <a href="https://github.com/csshark/sdr-cap/blob/main/VivadoComparer.sh">VivadoComparer.sh</a> to verify what changed in new relese and what should you rebuild manually. For me latest Vivado and adi release doesn't work well, so I recommend to chose version 2023.2.</p>
 
 <h1>Build Petalinux</h1>
