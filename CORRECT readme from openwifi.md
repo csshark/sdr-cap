@@ -117,7 +117,7 @@ Other Settings kept as they were.
 petalinux-build -c device-tree
 </code></pre>
 
-<p>When all the steps have been done flawlessly, follow the two commands and go make yourself a coffee or two (this process takes a while):</p>
+<p>When all the steps have been done flawlessly, follow this command and go make yourself a coffee or two (this process takes a while):</p>
 <pre><code>petalinux-build
 </code></pre>
 
