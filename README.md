@@ -33,7 +33,7 @@
     <li>Clone the repository:
         <pre><code>git clone https://github.com/csshark/sdr-cap.git
 cd sdr-cap</code></pre>
-      <li>Build OpenWifi image from my tutorial.</li>
+      <li>Build OpenWifi image from my <a href="CORRECT readme from openwifi.md">tutorial</a>.</li>
       <li>Compile my sniffer after placing it into user space. (Check <a href="/sniff_driver/README.md">driver installation</a>)</li>
     </li>
     <li>Run the script (current location is /root/openwifi/):
